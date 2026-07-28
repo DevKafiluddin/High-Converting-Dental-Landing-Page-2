@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrightSmile Dental Clinic — Your Perfect Smile Starts Here</title>
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- STICKY NAVBAR -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="logo">
+        <span class="logo__icon">✦</span>
+        <span class="logo__text">Bright<span class="logo__accent">Smile</span></span>
+      </a>
+      <nav class="nav">
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#why-us" class="nav__link">Why Us</a>
+        <a href="#dentist" class="nav__link">Our Doctor</a>
+        <a href="#gallery" class="nav__link">Results</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </nav>
+      <div class="header__actions">
+        <a href="tel:+15551234567" class="btn btn--ghost btn--phone">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call Now
+        </a>
+        <a href="#booking" class="btn btn--primary">Book Appointment</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="badge">
+            <span class="badge__dot"></span> Accepting New Patients
+          </div>
+          <h1 class="hero__title">Your Perfect Smile Starts Here</h1>
+          <p class="hero__text">
+            Expert dental care, advanced treatments, and personalized solutions designed around your confidence and comfort.
+          </p>
+          <div class="hero__ctas">
+            <a href="#booking" class="btn btn--cta btn--lg">Book Your Appointment</a>
+            <a href="tel:+15551234567" class="btn btn--ghost btn--lg">Call Now: (555) 123-4567</a>
+          </div>
+          
+          <div class="hero__trust-grid">
+            <div class="trust-item">
+              <span class="trust-item__stars">★★★★★</span>
+              <span class="trust-item__text">Google Rated</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-item__val">5000+</span>
+              <span class="trust-item__text">Happy Patients</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-item__val">Certified</span>
+              <span class="trust-item__text">Specialists</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-item__val">Same Week</span>
+              <span class="trust-item__text">Appointments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80" alt="Professional Dentist with Happy Patient" width="900" height="1000" class="hero__img" />
+          </div>
+          <div class="glass-card glass-card--top">
+            <div class="glass-card__icon">✦</div>
+            <div>
+              <strong>Advanced Tech</strong>
+              <span>Pain-Free Dentistry</span>
+            </div>
+          </div>
+          <div class="glass-card glass-card--bottom">
+            <div class="stars">★★★★★</div>
+            <div><strong>4.9 / 5.0</strong> Rating</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP / INSURANCE -->
+    <section class="trust-strip">
+      <div class="container trust-strip__inner">
+        <p class="trust-strip__label">Trusted by leading insurance providers &amp; dental associations</p>
+        <div class="trust-strip__logos">
+          <span>Delta Dental</span>
+          <span>Aetna</span>
+          <span>Cigna</span>
+          <span>MetLife</span>
+          <span>Guardian</span>
+          <span>ADA Member</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ONLINE BOOKING SECTION -->
+    <section id="booking" class="section section--alt">
+      <div class="container booking-grid">
+        <div class="booking-info">
+          <span class="eyebrow">Seamless Scheduling</span>
+          <h2 class="section-title">Schedule Your Visit in 60 Seconds</h2>
+          <p class="section-desc">
+            Choose your preferred time and treatment interest. Our front desk integration ensures your spot is reserved instantly.
+          </p>
+          <ul class="benefit-list">
+            <li>✓ Instant calendar routing to the right specialist</li>
+            <li>✓ Zero commitment, zero hidden reservation fees</li>
+            <li>✓ Gentle care guarantee with pain-free options</li>
+          </ul>
+        </div>
+
+        <div class="card booking-card">
+          <form id="appointmentForm" class="form">
+            <div class="form__group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" class="form__input" required placeholder="Dr. Jane Doe" />
+            </div>
+            
+            <div class="form__row">
+              <div class="form__group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" class="form__input" required placeholder="(555) 000-0000" />
+              </div>
+              <div class="form__group">
+                <label for="emailAddress">Email Address</label>
+                <input type="email" id="emailAddress" class="form__input" required placeholder="jane@example.com" />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="treatmentInterest">Treatment Interest</label>
+                <select id="treatmentInterest" class="form__input">
+                  <option value="General Checkup">General Checkup &amp; Cleaning</option>
+                  <option value="Dental Implants">Dental Implants</option>
+                  <option value="Invisalign">Invisalign Clear Aligners</option>
+                  <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                  <option value="Emergency Care">Emergency Care</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label for="preferredTime">Preferred Time</label>
+                <select id="preferredTime" class="form__input">
+                  <option value="Morning">Morning (8am - 12pm)</option>
+                  <option value="Afternoon">Afternoon (12pm - 4pm)</option>
+                  <option value="Evening">Late Afternoon (4pm - 6pm)</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--cta btn--block btn--lg">Reserve My Appointment</button>
+            <p class="microcopy">Only takes 60 seconds. Our team will confirm your appointment shortly.</p>
+          </form>
+
+          <div id="formSuccess" class="form-success" hidden>
+            <div class="form-success__icon">✓</div>
+            <h3>Booking Request Submitted!</h3>
+            <p>Thank you! Our front-desk coordinator will call you back within 1 business hour to confirm.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. CORE SERVICES SECTION -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="eyebrow">Our Specialties</span>
+          <h2 class="section-title">Core Dental Services</h2>
+          <p class="section-desc">State-of-the-art procedures tailored for restorative and cosmetic excellence.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <article class="card service-card">
+            <div class="service-card__media">
+              <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=600&q=80" alt="Dental Implants" loading="lazy" />
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Dental Implants</h3>
+              <p class="service-card__text">Restore missing teeth with natural-looking, long-lasting implant solutions.</p>
+              <a href="#booking" class="btn btn--ghost btn--block">Learn More →</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card service-card">
+            <div class="service-card__media">
+              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Invisalign" loading="lazy" />
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Invisalign</h3>
+              <p class="service-card__text">Straighten your smile discreetly with comfortable clear aligners.</p>
+              <a href="#booking" class="btn btn--ghost btn--block">Learn More →</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card service-card">
+            <div class="service-card__media">
+              <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80" alt="Cosmetic Dentistry" loading="lazy" />
+            </div>
+            <div class="service-card__body">
+              <h3 class="service-card__title">Cosmetic Dentistry</h3>
+              <p class="service-card__text">Transform your smile with whitening, veneers, and smile makeover treatments.</p>
+              <a href="#booking" class="btn btn--ghost btn--block">Learn More →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. WHY CHOOSE US SECTION -->
+    <section id="why-us" class="section section--alt">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="eyebrow">The BrightSmile Advantage</span>
+          <h2 class="section-title">Why Choose Our Practice</h2>
+          <p class="section-desc">Experience healthcare redesigned around your ultimate comfort and precision.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="card feature-card">
+            <div class="feature-card__icon">👨‍⚕️</div>
+            <h3>Experienced Dentists</h3>
+            <p>Over 15+ years of clinical leadership and continuous specialized training.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">🔬</div>
+            <h3>Modern Technology</h3>
+            <p>3D intraoral scanners, low-radiation digital X-rays, and CAD/CAM restorations.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">✨</div>
+            <h3>Pain-Free Treatment</h3>
+            <p>Gentle techniques and custom sedation options for a totally stress-free visit.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">💎</div>
+            <h3>Transparent Pricing</h3>
+            <p>Upfront itemized quotes with no hidden fees or unexpected post-treatment bills.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">💳</div>
+            <h3>Flexible Payment Plans</h3>
+            <p>0% APR financing options available through CareCredit and internal plans.</p>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-card__icon">🪴</div>
+            <h3>Family-Friendly Care</h3>
+            <p>A welcoming, calm environment designed for patients of all ages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PATIENT TESTIMONIAL SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="eyebrow">Patient Stories</span>
+          <h2 class="section-title">Real Smiles, Genuine Reviews</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="card testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__quote">
+              "The entire team made my dental experience comfortable and stress-free. My smile transformation was amazing."
+            </p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sarah M." />
+              <div>
+                <strong>Sarah Mitchell</strong>
+                <span>Cosmetic Patient</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__quote">
+              "My dental implants completely restored my confidence. I can eat and smile without a single worry!"
+            </p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="David R." />
+              <div>
+                <strong>David Ross</strong>
+                <span>Implant Patient</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__quote">
+              "Invisalign was so smooth! Nobody even noticed I was wearing aligners during my work presentations."
+            </p>
+            <div class="testimonial-card__author">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Elena K." />
+              <div>
+                <strong>Elena Gomez</strong>
+                <span>Invisalign Patient</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Badge -->
+        <div class="google-badge">
+          <span class="google-badge__g">G</span>
+          <div>
+            <strong>Google Customer Reviews</strong>
+            <span>4.9 / 5.0 Star Rating (1,240+ Verified Reviews)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BEFORE & AFTER SMILE GALLERY -->
+    <section id="gallery" class="section section--alt">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="eyebrow">Transformation Gallery</span>
+          <h2 class="section-title">Before &amp; After Transformations</h2>
+          <p class="section-desc">Drag the interactive slider to view the results achieved by our patients.</p>
+        </div>
+
+        <div class="ba-slider" id="baSlider">
+          <img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1000&q=80" alt="After Treatment" class="ba-slider__after" />
+          <div class="ba-slider__clip" id="baClip">
+            <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1000&q=80" alt="Before Treatment" class="ba-slider__before" />
+          </div>
+          <div class="ba-slider__handle" id="baHandle">
+            <div class="ba-slider__circle">↔</div>
+          </div>
+          <span class="ba-slider__tag ba-slider__tag--before">Before</span>
+          <span class="ba-slider__tag ba-slider__tag--after">After</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. DENTIST PROFILE SECTION -->
+    <section id="dentist" class="section">
+      <div class="container profile-grid">
+        <div class="profile-media">
+          <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80" alt="Dr. Alexander Wright" class="profile-img" />
+        </div>
+        <div class="profile-info">
+          <span class="eyebrow">Lead Practitioner</span>
+          <h2 class="section-title">Meet Dr. Alexander Wright, DDS</h2>
+          <p class="profile-bio">
+            "My philosophy is simple: dentistry should be gentle, precise, and entirely transparent. We combine cutting-edge technology with a human touch so you feel completely at ease."
+          </p>
+          <div class="profile-stats">
+            <div>
+              <strong>15+</strong>
+              <span>Years Experience</span>
+            </div>
+            <div>
+              <strong>12,000+</strong>
+              <span>Procedures Completed</span>
+            </div>
+            <div>
+              <strong>FAGD</strong>
+              <span>Fellowship Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. PATIENT JOURNEY SECTION -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="eyebrow">Simple &amp; Seamless</span>
+          <h2 class="section-title">Your 4-Step Patient Journey</h2>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-card__num">01</span>
+            <h3>Book Appointment</h3>
+            <p>Pick your preferred date and time online in less than 60 seconds.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-card__num">02</span>
+            <h3>Dental Consultation</h3>
+            <p>Relax in our modern clinic while we perform a comprehensive 3D scan.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-card__num">03</span>
+            <h3>Personalized Plan</h3>
+            <p>Receive a clear, transparent treatment roadmap tailored to your budget.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-card__num">04</span>
+            <h3>Smile Transformation</h3>
+            <p>Enjoy pain-free, world-class treatments and step out with confidence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. TRUST & CREDIBILITY SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="eyebrow">Accreditations</span>
+          <h2 class="section-title">Excellence Recognized Nationally</h2>
+        </div>
+        <div class="badges-row">
+          <div class="badge-card">
+            <span class="badge-card__icon">🏆</span>
+            <strong>Top Rated Dentist 2025</strong>
+            <span>Healthcare Excellence Awards</span>
+          </div>
+          <div class="badge-card">
+            <span class="badge-card__icon">🛡️</span>
+            <strong>ADA Certified</strong>
+            <span>American Dental Association</span>
+          </div>
+          <div class="badge-card">
+            <span class="badge-card__icon">🔬</span>
+            <strong>ICOI Implant Fellow</strong>
+            <span>International Congress of Implantologists</span>
+          </div>
+          <div class="badge-card">
+            <span class="badge-card__icon">✨</span>
+            <strong>Invisalign Provider</strong>
+            <span>Diamond Apex Tier</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FAQ SECTION -->
+    <section id="faq" class="section section--alt">
+      <div class="container container--narrow">
+        <div class="section-head text-center">
+          <span class="eyebrow">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <details class="faq-item" open>
+            <summary class="faq-item__question">
+              How much does treatment cost?
+              <span class="faq-item__toggle">+</span>
+            </summary>
+            <p class="faq-item__answer">
+              Treatment costs vary depending on individual patient needs. Following your initial consultation and 3D scan, we provide a complete, itemized cost breakdown before any work begins.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              How long does Invisalign treatment take?
+              <span class="faq-item__toggle">+</span>
+            </summary>
+            <p class="faq-item__answer">
+              Most adult cases take between 6 to 18 months, depending on alignment goals. You'll begin seeing visible improvements within the first 8 weeks.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              Are dental implants painful?
+              <span class="faq-item__toggle">+</span>
+            </summary>
+            <p class="faq-item__answer">
+              No! Implants are placed using local anesthesia and gentle precision techniques. Most patients report feeling minimal discomfort, often manageable with basic over-the-counter medication.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              Do you offer payment plans?
+              <span class="faq-item__toggle">+</span>
+            </summary>
+            <p class="faq-item__answer">
+              Yes, we partner with CareCredit and offer customized internal monthly installment plans with 0% APR options for qualified patients.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-item__question">
+              How do I book an appointment?
+              <span class="faq-item__toggle">+</span>
+            </summary>
+            <p class="faq-item__answer">
+              Simply fill out the 60-second online booking form above or call our front desk directly at (555) 123-4567.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. FINAL CTA SECTION -->
+    <section class="cta-banner">
+      <div class="container text-center">
+        <h2 class="cta-banner__title">Ready To Love Your Smile Again?</h2>
+        <p class="cta-banner__text">
+          Schedule your consultation today and take the first step toward a healthier, confident smile.
+        </p>
+        <div class="cta-banner__actions">
+          <a href="#booking" class="btn btn--cta btn--lg">Book Appointment</a>
+          <a href="tel:+15551234567" class="btn btn--ghost-white btn--lg">Call Our Clinic</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 12. FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="#" class="logo logo--footer">
+          <span class="logo__icon">✦</span>
+          <span class="logo__text">Bright<span class="logo__accent">Smile</span></span>
+        </a>
+        <p class="footer__about">
+          Providing modern, gentle, and elite dental care to our community. Your comfort and confidence are our top priorities.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contact Us</h4>
+        <p>📍 123 Healthcare Blvd, Suite 400<br />New York, NY 10001</p>
+        <p>📞 <a href="tel:+15551234567" id="footerPhone">(555) 123-4567</a></p>
+        <p>✉️ <a href="mailto:care@brightsmiledental.com">care@brightsmiledental.com</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Opening Hours</h4>
+        <p>Mon – Thu: 8:00 AM – 6:00 PM</p>
+        <p>Friday: 8:00 AM – 4:00 PM</p>
+        <p>Saturday: 9:00 AM – 2:00 PM (By Appt)</p>
+        <p>Sunday: Closed</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Location</h4>
+        <div class="map-placeholder">
+          <span>📍 Interactive Google Map</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; 2026 BrightSmile Dental Clinic. All Rights Reserved.</p>
+      <div class="footer__links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY FLOATING CTA BAR -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:+15551234567" class="btn btn--ghost btn--block" id="mobileCallBtn">Call Now</a>
+    <a href="#booking" class="btn btn--cta btn--block" id="mobileBookBtn">Book Appointment</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
